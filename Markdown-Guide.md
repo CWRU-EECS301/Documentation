@@ -28,3 +28,14 @@ There are a number of Markdown editors available for Window, macOS, and Linux.  
 
 * [MacDown](http://macdown.uranusjr.com)
 * [Marked 2](http://marked2app.com/)/[Vim](http://www.vim.org/)
+
+## Markdown Deployment
+Markdown can be converted to either HTML or PDF for easier deployment.
+
+Here's a list of conversion options:
+
+* gitprint.com can convert text only Markdown document from public repos
+* MacDown has export for both HTML and PDF
+* Render with [grip](https://github.com/joeyespo/grip) and export using a web browser
+* Command-line conversion with [markdown-pdf](https://github.com/alanshaw/markdown-pdf) (enables automatic conversion via scripts)
+
