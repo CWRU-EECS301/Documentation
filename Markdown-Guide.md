@@ -27,3 +27,4 @@ There are a number of Markdown editors available for Window, macOS, and Linux.  
 ###macOS
 
 * [MacDown](http://macdown.uranusjr.com)
+* [Marked 2](http://marked2app.com/)/[Vim](http://www.vim.org/)
