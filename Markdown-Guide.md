@@ -22,7 +22,8 @@ There are a number of Markdown editors available for Window, macOS, and Linux.  
 
 ###Linux
 
-* [Emacs](http://jblevins.org/projects/markdown-mode/)
+* [Remarkable](https://remarkableapp.github.io/linux.html)
+* [Emacs (with markdown-mode package)](http://jblevins.org/projects/markdown-mode/)
 
 ###macOS
 
@@ -37,4 +38,4 @@ Here's a list of conversion options:
 * gitprint.com can convert text only Markdown documents from public GitHub repositories
 * MacDown has an export function for both HTML and PDF
 * Render with [grip](https://github.com/joeyespo/grip) and export using a web browser
-* Command-line conversion with [markdown-pdf](https://github.com/alanshaw/markdown-pdf) (enables automatic conversion via scripts)
+* Command-line conversion with [markdown-pdf](https://github.com/alanshaw/markdown-pdf) (enables automatic conversion via scripts)https://remarkableapp.github.io/linux.html
