@@ -48,7 +48,7 @@ The following hardware is provided on the board:
 * One 10-pin ADC Input Header
 * One LTC connector
   * One Serial Peripheral Interface (SPI) Master
-  * One I2C
+  * One I<sup>2</sup>C
   * One GPIO interface
 
 ###Display
@@ -81,7 +81,8 @@ The following hardware is provided on the board:
 
 ###Sensors
 
-* G-Sensor on HPS
+* G-Sensor on HPS (I<sup>2</sup>C)
+  * Analog Devices [ADXL345](http://www.analog.com/en/products/mems/accelerometers/adxl345.html#product-overview) 3-Axis Digital Accelerometer
 
 ###Power
 
