@@ -1,38 +1,118 @@
 # DE1-SoC Development Board
 
 ## Overview
-![DE1-SoC Image](DE1_image_thumb.jpg)
+![DE1-SoC Image](DE1-SoC_top45_01.jpg)
 
-The purpose of the Altera DE1 Development and Education board is to provide the ideal vehicle for advanced design prototyping in the multimedia, storage, and networking.  
-It uses the state-of-the-art technology in both hardware and CAD tools to expose designers to a wide range of topics. The board offers a rich set of features that make it suitable for use in a laboratory environment for university and college courses, for a variety of design projects, as well as for the development of sophisticated digital systems. Altera provides a suite of supporting materials for the DE1 board, including tutorials, "ready-to-teach" laboratory exercises, and illustrative demonstrations.
+The **DE1-SoC** Development Kit presents a robust hardware design platform built around the Altera System-on-Chip (SoC) FPGA, which combines the latest dual-core Cortex-A9 embedded cores with industry-leading programmable logic for ultimate design flexibility. Users can now leverage the power of tremendous re-configurability paired with a high-performance, low-power processor system. Altera’s SoC integrates an ARM-based hard processor system (HPS) consisting of processor, peripherals and memory interfaces tied seamlessly with the FPGA fabric using a high-bandwidth interconnect backbone. The DE1-SoC development board includes hardware such as high-speed DDR3 memory, video and audio capabilities, Ethernet networking, and much more.  
+The **DE1-SoC** Development Kit contains all components needed to use the board in conjunction with a computer that runs the Microsoft Windows XP or later (64-bit OS and Quartus II 64-bit are required to compile projects for DE1-SoC). 
+
+ 
 
 ## Specifications
-DE1 board provides users many features to enable various multimedia project development. Component selection was made according to the most popular design in volume production multimedia products. The DE1 platform allows users to quickly understand all the insight tricks to design projects for industry.
 
-* Altera Cyclone II 2C20 FPGA with 20000 LEs
-* Altera Serial Configuration devices (EPCS4) for Cyclone II 2C20
-* USB Blaster built in on board for programming and user API controlling
-* JTAG Mode and AS Mode are supported
-* 8Mbyte (1M x 4 x 16) SDRAM
-* 4Mbyte Flash Memory
-* 512Kbyte(256Kx16) SRAM
-* SD Card Socket
-* 4 Push-button switches
-* 10 DPDT switches
-* 8 Green User LEDs
-* 10 Red User LEDs
-* 4 Seven-segment LED displays
-* 50MHz oscillator, 24MHz oscillator, 27MHz oscillator and external clock sources
-* 24-bit CD-Quality Audio CODEC with line-in, line-out, and microphone-in jacks
-* VGA DAC (4-bit R-2R per channel) with VGA out connector
-* RS-232 Transceiver and 9-pin connector
-* PS/2 mouse/keyboard connector
-* Two 40-pin Expansion Headers (GPIO : voltage levels: 3.3V)
-* DE1 Lab CD-ROM which contains many examples with source code
-* Size：153*153 mm
+The DE1-SoC board has many features that allow users to implement a wide range of designed circuits, from simple circuits to various multimedia projects.
+
+The following hardware is provided on the board:
+
+###FPGA Device
+
+* Cyclone V SoC 5CSEMA5F31C6 Device
+* Dual-core ARM Cortex-A9 (HPS)
+* 85K Programmable Logic Elements
+* 4,450 Kbits embedded memory
+* 6 Fractional PLLs
+* 2 Hard Memory Controllers
+
+###Configuration and Debug
+
+* Serial Configuration device – EPCS128 on FPGA
+* On-Board USB Blaster II (Normal type B USB connector)
+
+###Memory Device
+
+* 64MB (32Mx16) SDRAM on FPGA
+* 1GB (2x256Mx16) DDR3 SDRAM on HPS
+* Micro SD Card Socket on HPS
+
+###Communication
+
+* Two Port USB 2.0 Host (ULPI interface with USB type A connector)
+* USB to UART (micro USB type B connector)
+* 10/100/1000 Ethernet
+* PS/2 mouse/keyboard
+* IR Emitter/Receiver
+
+###Connectors
+
+* Two 40-pin Expansion Headers (voltage levels: 3.3V)
+* One 10-pin ADC Input Header
+* One LTC connector
+  * One Serial Peripheral Interface (SPI) Master
+  * One I2C
+  * One GPIO interface
+
+###Display
+
+* 24-bit VGA DAC
+
+###Audio
+
+* 24-bit CODEC, Line-in, Line-out, and Microphone-in jacks
+  * [Wolfson WM8731 Audio CODEC](http://www.cirrus.com/en/products/pro/detail/P1307.html)
+
+###Video Input
+
+* TV Decoder (NTSC/PAL/SECAM) and TV-in connector
+
+###ADC
+
+* sample rate: 500 KSPS
+* Channel number: 8
+* Resolution: 12 bits
+* Analog input range : 0 ~ 4.096 V
+
+###Switches, Buttons and Indicators
+
+* 4 User Keys (FPGA x4)
+* 10 User switches (FPGA x10)
+* 11 User LEDs (FPGA x10 ; HPS x 1)
+* 2 HPS Reset Buttons (HPS_RST_n and HPS_WARM_RST_n)
+* Six 7-segment displays
+
+###Sensors
+
+* G-Sensor on HPS
+
+###Power
+
+* 12V DC input
+
+###Block Diagram of the DE1-SOC Board
+
+![Block Diagram](DE1-Soc_block_diagram.jpg)
+
+## Board Layout
+
+* Size：166*130 mm
+
+### Top
+
+![DE1-SoC Top](DE1-SoC_board_top.jpg)
+
+### Bottom
+
+![DE1-SoC Bottom](DE1-SoC_board_bottom.jpg)
+
+## Dev Kit Contents
+
+![DE1-SoC Kit Contents](DE1-SoC_kit_contents.jpg)
+* DE1-SoC Board
+* DE1-SoC Quick Start Guide
+* Type A to B USB Cable
+* Type A to Mini-B USB Cable
+* Power DC Adapter (12V)
 
 ## Documents
 
-[DE1 Board Introduction](DE1_introduction_box.pdf)  
-[Getting Started User Manual](DE1_UserManual_v1018.pdf)  
-[terasIC Website](https://www.terasic.com.tw/cgi-bin/page/archive.pl?No=83)
+* [DE1-SoC User Manual](DE1-SoC_User_manual_ref.pdf)
+* [terasIC DE1-SoC Website](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=165&No=836)
