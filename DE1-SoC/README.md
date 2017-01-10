@@ -89,7 +89,7 @@ The following hardware is provided on the board:
 
 ###Block Diagram of the DE1-SOC Board
 
-![Block Diagram](DE1-Soc_block_diagram.jpg)
+![Block Diagram](DE1-SoC_block_diagram.jpg)
 
 ## Board Layout
 
