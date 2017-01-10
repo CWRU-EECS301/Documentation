@@ -42,6 +42,7 @@ $ sudo apt-get install git-all
 
 :warning: **Warning:** Beware setting up an ssh-key on a public machine.
 
+[Setting up an SSH Key](https://help.github.com/articles/generating-an-ssh-key/)
 
 ## GitHub Account Setup
 
