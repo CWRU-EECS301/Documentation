@@ -39,3 +39,7 @@ Here's a list of conversion options:
 * MacDown has an export function for both HTML and PDF
 * Render with [grip](https://github.com/joeyespo/grip) and export using a web browser
 * Command-line conversion with [markdown-pdf](https://github.com/alanshaw/markdown-pdf) (enables automatic conversion via scripts)
+
+## Reference Material
+
+* [Emoji Cheat Sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
