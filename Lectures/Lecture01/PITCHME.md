@@ -1,8 +1,8 @@
 #HSLIDE
 
-EECS 301
+##EECS 301
 
-Digital Logic Laboratory
+**Digital Logic Laboratory**
 
 * Instructor: John Gibbons
 * Assistant: Matt McConnell
