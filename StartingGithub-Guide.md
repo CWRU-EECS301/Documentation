@@ -48,11 +48,13 @@ After your personal account is setup:
 1. Optionally, signup for GitHub's [Student Developer Pack](https://education.github.com/pack) (although it's not required for this course)
 
 ## Setting Up Your Development Machine
+
 To get started you'll need to configure your machine to use Git.  The setup varies depending on the operating system and each OS has a number of options.  
 
 Skip to the OS section that applies for your machine:
 
 ### Windows / macOS(OS X)
+
 [GitHub Desktop](https://desktop.github.com) is available for Windows and Mac and provides both a GUI and command-line tools.  This will be the **recommended option** for this class but feel free to use any other tools available.  Some options are 
 [GitKraken](https://www.gitkraken.com),
 [SourceTree](https://www.atlassian.com/software/sourcetree) and
@@ -70,6 +72,7 @@ If you have XCode installed, you should have the Git application available from 
 The XCode version of Git is (mostly) the same as the Linux version so see the Linux section for details.
 
 ### Linux
+
 All the major linux distributions have a command-line **git** package that can be installed easily.  For Debian-based distros (e.g. Ubuntu):
 
 ```shell
@@ -80,22 +83,22 @@ After installing **git**, there are a number of configuration steps that need to
 
 * Set your username and email address
 
-* ```
-$ git config --global user.name "YOUR NAME"
-$ git config --global user.email "YOUR EMAIL ADDRESS"
-```
+	```
+	$ git config --global user.name "YOUR NAME"
+	$ git config --global user.email "YOUR EMAIL ADDRESS"
+	```
 
 * Select the default push behavior
 
-* ```
-$ git config --global push.default simple
-```
+	```
+	$ git config --global push.default simple
+	```
 
 * Set your editor for commit comments
 
-* ```
-$ git config --global core.editor "nano"
-```
+	```
+	$ git config --global core.editor "nano"
+	```
 
 ## Configuring Command-Line Git SSH Access
 
