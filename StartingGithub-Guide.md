@@ -169,11 +169,11 @@ origin	git@alt.github.com:CWRU-EECS301/Documentation.git (push)
 
 ## Cloning from GitHub
 
-A repository from GitHub can be cloned either using a client application (like GitHub Desktop) or directly from the command line.  Both methods will be demonstrated by cloning the **Documentation** repository from the EECS301 GitHub.  
+A repository from GitHub can be cloned either using a client application (like GitHub Desktop) or directly from the command line.  Both methods will be demonstrated by cloning the **Documentation** repository from the EECS301 GitHub (viewable via web browser @ [https://github.com/CWRU-EECS301/Documentation](https://github.com/CWRU-EECS301/Documentation)).
 
 ### From the Command Line
 
-Using the command line tool `git clone` we'll clone the **Documentation** repository into the directory EECS301 using SSH.  
+Using the Git command line tool `git clone` we'll clone the **Documentation** repository into the directory EECS301 using SSH. (Skip to your OS section)
 
 #### Windows
 
@@ -193,6 +193,19 @@ $ cd EECS301
 $ git clone git@github.com:CWRU-EECS301/Documentation.git
 ```
 
+#### macOS (OSX)
+
+From a terminal:
+
+```
+$ cd EECS301
+$ git clone git@github.com:CWRU-EECS301/Documentation.git
+```
+
 ### From the GitHub Desktop
 
-TODO: Add screen shots here.
+Once you've been added to the EECS301 GitHub Team and you have linked your GitHub account to GitHub Desktop, you'll be able to clone repositories from the repository list as show below:
+
+<kbd>
+![GitHub Desktop](GitHubDesktop01.png)
+</kbd>
