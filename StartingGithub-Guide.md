@@ -63,13 +63,13 @@ Skip to the OS section that applies for your machine:
 Follow this guide for setting up GitHub Desktop: 
 [Getting Started with GitHub Desktop](https://help.github.com/desktop/guides/getting-started/)
 
-**Note:** On Windows, there are two applications installed.  The **GitHub** GUI application and the **Git Shell** command-line interface.  The command-line interface **Git Shell** is probably the easier of the two options to use for your normal workflow.
+**Note:** On Windows, there are two applications installed.  The **GitHub Desktop** GUI application and the **Git Shell** command-line interface.  The command-line interface **Git Shell** is probably the easier of the two options to use for your normal workflow.
 
 ### macOS(OS X)
 
-If you have XCode installed, you should have the Git application available from the terminal already.  (If XCode isn't installed, do **not** install it just for Git, it's huge).
+If you have Xcode installed, you should already have the Git application available from the terminal.  (If Xcode isn't installed, do **not** install it just for Git, it's huge.)
 
-The XCode version of Git is (mostly) the same as the Linux version so see the Linux section for details.
+The Xcode version of Git is (mostly) the same as the Linux version so see the Linux section for details.
 
 ### Linux
 
@@ -200,6 +200,14 @@ From a terminal:
 ```
 $ cd EECS301
 $ git clone git@github.com:CWRU-EECS301/Documentation.git
+Cloning into 'Documentation'...
+remote: Counting objects: 3040, done.
+remote: Compressing objects: 100% (39/39), done.
+remote: Total 3040 (delta 14), reused 0 (delta 0), pack-reused 2993
+Receiving objects: 100% (3040/3040), 158.68 MiB | 1.79 MiB/s, done.
+Resolving deltas: 100% (1682/1682), done.
+Checking connectivity... done.
+Checking out files: 100% (3980/3980), done.
 ```
 
 ### From the GitHub Desktop
