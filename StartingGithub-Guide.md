@@ -63,7 +63,7 @@ Skip to the OS section that applies for your machine:
 Follow this guide for setting up GitHub Desktop: 
 [Getting Started with GitHub Desktop](https://help.github.com/desktop/guides/getting-started/)
 
-**Note:** On Windows, there are two applications installed.  The **GitHub Desktop** GUI application and the **Git Shell** command-line interface.  The command-line interface **Git Shell** is probably the easier of the two options to use for your normal workflow.
+**Note:** On Windows, there are two applications installed.  The **GitHub Desktop** GUI application and the **Git Shell** command-line interface.  The command-line interface **Git Shell** is probably the easier of the two options to use for your normal workflow.  When setting up SSH key access you'll want to use **Git Shell**.
 
 ### macOS(OS X)
 
@@ -102,9 +102,9 @@ After installing **git**, there are a number of configuration steps that need to
 
 ## Configuring Command-Line Git SSH Access
 
-When running Git from the command-line with an SSH remote, SSH will need to know which private SSH key to use for the host.  This host information can be set in the SSH config file.
+When running Git from a command-line app (either **Git Shell** on Windows or **Terminal** on Linux/macOS) with an SSH remote, SSH will need to know which private SSH key to use for the host.  This host information can be set in the SSH config file.
 
-Check your Git remote to make sure you're using SSH connecting to GitHub (indicated by **git@github.com**):
+First, check your Git remote to make sure you're using SSH connecting to GitHub (indicated by **git@github.com**):
 
 ```
 $ git remote -v
@@ -112,7 +112,8 @@ origin	git@github.com:CWRU-EECS301/Documentation.git (fetch)
 origin	git@github.com:CWRU-EECS301/Documentation.git (push)
 ```
 
-On Linux and macOS, the SSH **config** file is stored at ~/.ssh/config for each user.
+On Linux and macOS, the SSH **config** file is stored at ~/.ssh/config for each user.  
+When using **Git Shell** on Windows, it is also at ~/.ssh/config.
 
 Edit the SSH **config** file to add GitHub host:
 
