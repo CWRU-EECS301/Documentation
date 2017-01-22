@@ -104,45 +104,57 @@ After installing **git**, there are a number of configuration steps that need to
 
 When running Git from a command-line app (either **Git Shell** on Windows or **Terminal** on Linux/macOS) with an SSH remote, SSH will need to know which private SSH key to use for the host.  This host information can be set in the SSH config file.
 
-First, check your Git remote to make sure you're using SSH connecting to GitHub (indicated by **git@github.com**):
+:information_source: Typically, the SSH **config** file is stored at ~/.ssh/config for each user.  This should be the case on Linux, macOS, and when using the **Git Shell** on Windows.
 
-```
-$ git remote -v
-origin	git@github.com:CWRU-EECS301/Documentation.git (fetch)
-origin	git@github.com:CWRU-EECS301/Documentation.git (push)
-```
+1. Create (or edit if it already exists) the SSH **config** file to add GitHub host.  Any text editor can be used but here we'll use nano because it's fast and simple:
 
-On Linux and macOS, the SSH **config** file is stored at ~/.ssh/config for each user.  
-When using **Git Shell** on Windows, it is also at ~/.ssh/config.
+	```
+	$ nano ~/.ssh/config
+	```
 
-Edit the SSH **config** file to add GitHub host:
+	Add this **Host** definition to the file (assuming your private key for GitHub was named github_rsa):
 
-```
-$ nano ~/.ssh/config
-```
+	```
+	Host github.com
+	    HostName github.com
+	    PreferredAuthentications publickey
+	    IdentityFile ~/.ssh/github_rsa
+	```
 
-Add this **Host** definition to the file (assuming your private key for GitHub was named github_rsa):
+	:warning: **WARNING:** Path names are case-sensitive.
 
-```
-Host github.com
-    HostName github.com
-    PreferredAuthentications publickey
-    IdentityFile ~/.ssh/github_rsa
-```
+1. Test your new configuration using the SSH test command:
 
-:warning: **WARNING:** Path names are case-sensitive.
+	```
+	$ ssh -T git@github.com
+	Hi user! You've successfully authenticated, but GitHub does not provide shell access.
+	```
 
-To test your new configuration you can run the SSH test command:
+	If you are prompted for your passphrase, see the next section "SSH Key Passphrases".
 
-```
-$ ssh -T git@github.com
-Hi user! You've successfully authenticated, but GitHub does not provide shell access.
-```
 
-:warning: **NOTE:** If you've added a password to your SSH key then you may need to add your key to SSH Agent using the command:
+### SSH Key Passphrases
+
+:warning: **NOTE:** If you've added a passphrase to your SSH Key then you may need to add your key to SSH Agent using the command:
 
 ```
 $ ssh-add ~/.ssh/github_rsa
+```
+
+You'll be prompted for your passphrase.  
+
+SSH Agent will remember your passphrase until its shutdown (on a machine reboot for instance).  You'll then have to rerun the ssh-add command to authorize your key again.
+
+List the currently authorized keys with the command: `ssh-add -l`
+
+:warning: If you see the following message from Git, it probably means your passphrase has not been authorized with SSH Agent.
+
+```
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 ```
 
 ---
@@ -171,6 +183,10 @@ origin	git@alt.github.com:CWRU-EECS301/Documentation.git (push)
 ## Cloning from GitHub
 
 A repository from GitHub can be cloned either using a client application (like GitHub Desktop) or directly from the command line.  Both methods will be demonstrated by cloning the **Documentation** repository from the EECS301 GitHub (viewable via web browser @ [https://github.com/CWRU-EECS301/Documentation](https://github.com/CWRU-EECS301/Documentation)).
+
+**NOTE:** It's recommended to create a common directory (such as `c:\projects\EECS301` or `~/Projects/EECS301`) to do all your repository clones for the class.  That will help keep things organized.
+
+:warning: **WARNING:** Avoid path and file names with spaces.  Some of the tools may still have problems with spaces in names.
 
 ### From the Command Line
 
@@ -218,3 +234,10 @@ Once you've been added to the EECS301 GitHub Team and you have linked your GitHu
 <kbd>
 ![GitHub Desktop](GitHubDesktop01.png)
 </kbd>
+
+
+## Finished
+
+GitHub should now be setup to use.  
+
+Jump to the [Git Tutorial](Git-Tutorial.md) for more information using Git.
