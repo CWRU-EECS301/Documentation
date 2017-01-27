@@ -43,7 +43,7 @@
 
 ## RTL Logic (Register Transfer Level Logic)
 
-![RTL Logic](https://github.com/CWRU-EECS301/Documentation/blob/master/Lectures/Lecture02/rtl-logic.png)
+![RTL Logic](https://raw.githubusercontent.com/CWRU-EECS301/Documentation/master/Lectures/Lecture02/rtl-logic.png)
 
 * HDL behavioral models are translated to RTL logic
 * RTL logic is synthesized into Gate-level logic
@@ -53,7 +53,7 @@
 
 ## FPGA Structure (Altera Cyclone V)
 
-![Cyclone V Floorplan](https://github.com/CWRU-EECS301/Documentation/blob/master/Lectures/Lecture02/cv_floorplan.gif)
+![Cyclone V Floorplan](https://raw.githubusercontent.com/CWRU-EECS301/Documentation/master/Lectures/Lecture02/cv_floorplan.gif)
 
 * FPGA fabric consists mainly of ALMs (or CLBs on Xilinx FPGAs)
 * Other Hard-IP features are added for additional capabilities
@@ -64,7 +64,7 @@
 
 * Cyclone V 5CSEA5 FPGA has 32,075 ALMs
 
-![Cyclone V ALM](https://github.com/CWRU-EECS301/Documentation/blob/master/Lectures/Lecture02/cv_alm01.png)
+![Cyclone V ALM](https://raw.githubusercontent.com/CWRU-EECS301/Documentation/master/Lectures/Lecture02/cv_alm01.png)
 
 #HSLIDE
 
