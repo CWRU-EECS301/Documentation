@@ -75,3 +75,6 @@ Enable the preview window, **Plugins** -> **PreviewHTML** -> **PreviewHTML**
 
 You should see a window popup with the Markdown preview (might take a few seconds to update after opening)
 
+You can dock the Preview Window to make it easier to use.
+
+![Notepad++ Markdown Preview](npp-md-preview.png)
