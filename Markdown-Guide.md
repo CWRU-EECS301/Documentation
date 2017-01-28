@@ -19,6 +19,7 @@ There are a number of Markdown editors available for Window, macOS, and Linux.  
 ###Windows
 
 * [MarkdownPad](http://markdownpad.com)
+* [Notepad++](https://notepad-plus-plus.org/) / [Markdown Viewer Plugin](Markdown-WindowsNotepadPlusPlusPlugin.md)
 
 ###Linux
 
@@ -39,6 +40,37 @@ Here's a list of conversion options:
 * MacDown has an export function for both HTML and PDF
 * Render with [grip](https://github.com/joeyespo/grip) and export using a web browser
 * Command-line conversion with [markdown-pdf](https://github.com/alanshaw/markdown-pdf) (enables automatic conversion via scripts)
+
+## Markdown Images 
+
+Images are an important component of any document and Markdown makes adding images easy, simply using the following syntax:
+
+`![Image Tag](image_file.jpg)`
+
+Note, this assumes the image file is in the same directory as the Markdown document.  
+
+Image paths can be relative (within the same repository):
+
+`![Relative Path Image](../images/image_file.jpg)`
+
+Or absolute (anywhere with a URL):
+
+`![Absolute Path Image](https://case.edu/umc/media/caseedu/umc/images/logos/formalLogo560x285.jpg)`
+
+### GitHub Image Rotation Problems
+
+GitHub does not look at an image's exif data to correctly rotate images in Markdown documents.  An image will need to be edited and saved with the desired orientation in order for GitHub to display it correctly.
+
+**Note:** On Linux, images can be batched converted using `exiftran` which will rotate files based on their exif data.
+
+```
+sudo apt-get install exiftran
+exiftran -ai *.jpg
+```
+
+### Capturing Screen Snapshots
+
+Screen snapshots can be an important part of documentation.  Here's a quick how-to for the major operating systems: [Screen Capture How-To](ScreenCapture-HowTo.md)
 
 ## Reference Material
 
