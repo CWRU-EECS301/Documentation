@@ -19,7 +19,7 @@ There are a number of Markdown editors available for Window, macOS, and Linux.  
 ###Windows
 
 * [MarkdownPad](http://markdownpad.com)
-* [Notepad++](https://notepad-plus-plus.org/) / [Markdown Viewer Plugin](Markdown-WindowsNotepadPlusPlusPlugin.md)
+* [Notepad++](https://notepad-plus-plus.org/) / [Markdown PreviewHTML Plugin](Markdown-WindowsNotepadPlusPlusPlugin.md)
 
 ###Linux
 
