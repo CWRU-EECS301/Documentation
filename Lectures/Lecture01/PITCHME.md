@@ -51,7 +51,7 @@ _Tentative Schedule_
 
 ## Altera Cyclone V SoC DevKit
 
-![DevKit](DE1-SoC_board_top.jpg)
+![DevKit](https://raw.githubusercontent.com/CWRU-EECS301/Documentation/master/Lectures/Lecture01/DE1-SoC_board_top.jpg)
 
 #HSLIDE
 
