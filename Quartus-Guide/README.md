@@ -12,7 +12,7 @@ Download the files listed for your OS:
   * ModelSimSetup-15.1.0.185-windows.exe
   * cyclonev-15.1.0.185.qdz
 
-* **For Linux**: [Quartus v15.1 Linux](https://drive.google.com/drive/u/1/folders/0B3gj26Jx7aigODZFeWRvMXVELWc)
+* **For Linux**: [Quartus v15.0.2 Linux](https://drive.google.com/drive/u/1/folders/0B3gj26Jx7aigODZFeWRvMXVELWc)
   * QuartusSetup-15.0.2.153-linux.run
   * Quartus-15.0.0.145-linux.tar
   * Quartus-15.0.0.145-devices-1.tar
@@ -52,7 +52,7 @@ Connect to the CWRU license server to register Quartus:
 
 1. In the **License File** box enter: _1800@cse-lic-03_
 
-1. The set of licensed cores should update.
+1. The set of 4 (total) licensed cores should update.
 
 
 
