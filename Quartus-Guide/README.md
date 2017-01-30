@@ -52,7 +52,7 @@ There is also a bug work around that needs to be done for ModelSim:
 3. Copy the path from the **ModelSim-Altera** box to the **ModelSim** box
 4. Click **OK** to save the changes
 
-note: the modelsim path should have the _ase and NOT the _ae in it.  
+Note: the modelsim path should have the _ase and NOT the _ae in it (want the Starter Edition)
 KUbuntu install on my laptop was set to be put in /opt, so the 
 modelsim path should be /opt/altera/15.0/modelsim_ase/linuxaloem
 
