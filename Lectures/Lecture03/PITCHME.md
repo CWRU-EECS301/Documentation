@@ -125,7 +125,8 @@ end
 
 #HSLIDE
 
-## Multiplexer (non-registered)
+## Multiplexer
+## (non-registered)
 
 * Continuous assignment using always block
 * `mux` output selected by `mux_sel`
