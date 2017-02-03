@@ -11,7 +11,7 @@
 
 #HSLIDE
 
-# Module
+## Module
 
 ```Verilog
 module Module_Name
@@ -29,7 +29,7 @@ endmodule;
 
 #HSLIDE
 
-# Good Coding Practice
+## Good Coding Practice
 
 * One module definition per file
 * Include comment header block for each module
@@ -39,7 +39,7 @@ endmodule;
 
 #HSLIDE
 
-# Parameters
+## Parameters
 
 * Similar concept as overloading or polymorphism in C++
 * Parameters provide flexibility for module functionality
@@ -52,7 +52,7 @@ endmodule;
 
 #HSLIDE
 
-# Parameter Example
+## Parameter Example
 
 ```Verilog
 parameter CLK_RATE = 50 // MHz
@@ -68,7 +68,7 @@ reg [COUNT_WIDTH:0] count_reg;
 
 #HSLIDE
 
-# Signal Types
+## Signal Types
 
 * wire     (combinatorial signal)
 * reg      (registered signal)
@@ -79,7 +79,7 @@ reg [COUNT_WIDTH:0] count_reg;
 
 #HSLIDE
 
-# Numerical Constants
+## Numerical Constants
 
 * Number constants specified in format: `width'radix value`
 * width is number of bits
@@ -92,7 +92,7 @@ reg [COUNT_WIDTH:0] count_reg;
 
 #HSLIDE
 
-# Register
+## Register
 
 * always block with edge sensitive clock creates a register
 
@@ -107,7 +107,7 @@ end
 
 #HSLIDE
 
-# Shift Register
+## Shift Register
 
 * Concatenation operator shifts the signal assignments
 * Shift occurs when shift_data is asserted
@@ -124,7 +124,7 @@ end
 
 #HSLIDE
 
-# Multiplexer (non-registered)
+## Multiplexer (non-registered)
 
 * Continuous assignment using always block
 * `mux` output selected by `mux_sel`
@@ -143,7 +143,7 @@ end
 
 #HSLIDE
 
-# Multiplexer (registered)
+## Multiplexer (registered)
 
 * registered on rising-edge of clock
 
@@ -162,7 +162,7 @@ end
 
 #HSLIDE
 
-# Rollover Counter
+## Rollover Counter
 
 ```Verilog
 // Generate a clock tick every 100 clock cycles
