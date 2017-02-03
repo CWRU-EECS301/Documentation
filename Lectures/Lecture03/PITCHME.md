@@ -35,14 +35,15 @@ endmodule;
 * Include comment header block for each module
 	* Example: see any lab assignment module file
 * Name of file should match name of module
-* Prefix file name of grouped modules
-
+* Prefix the filename of grouped modules
+	* Example: `CLS_Scanner_Module.v`
+	
 #HSLIDE
 
 ## Parameters
 
-* Similar concept as overloading or polymorphism in C++
-* Parameters provide flexibility for module functionality
+* Similar concept to overloading in C++
+* Parameters make module functionality flexible
 * Simple parameters
 	* Specify signal widths
 	* Set delay parameters
@@ -81,7 +82,7 @@ reg [COUNT_WIDTH:0] count_reg;
 
 ## Numerical Constants
 
-* Number constants specified in format: `width'radix value`
+* Number constants specified in format: ```width'radix value```
 * width is number of bits
 * radix defines base of value
 	* `h` for hexidecimal : `8'h3D`
