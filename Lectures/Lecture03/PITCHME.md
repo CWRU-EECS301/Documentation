@@ -94,7 +94,7 @@ reg [COUNT_WIDTH:0] count_reg;
 
 ## Register
 
-* always block with edge sensitive clock creates a register
+* `always` block with edge sensitive clock creates register
 
 ```Verilog
 reg [15:0] data_reg;
@@ -145,7 +145,7 @@ end
 
 ## Multiplexer (registered)
 
-* registered on rising-edge of clock
+* Registered on rising-edge of clock
 
 ```Verilog
 always @(posedge CLK)
