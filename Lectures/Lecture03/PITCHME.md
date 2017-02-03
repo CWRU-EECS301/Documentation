@@ -184,5 +184,6 @@ end
 
 #HSLIDE
 
+## Additional Reading
 
-
+* [Lab 2 Component Reference](https://github.com/CWRU-EECS301/Lab2-Assignment/blob/master/Lab2-Project/Lab2-ComponentReference.md) document
