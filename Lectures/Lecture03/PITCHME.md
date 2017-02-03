@@ -1,6 +1,7 @@
 #HSLIDE
 
-## DE1-SoC Board Hardware Programming Demo
+## DE1-SoC Board
+## Hardware Programming Demo
 
 * Refer to [Lab 2 Dev Kit Hardware Guide](https://github.com/CWRU-EECS301/Lab2-Assignment/blob/master/Lab2-Guide/Lab2-DevKitHardwareGuide.md)
 
@@ -61,7 +62,8 @@ parameter DELAY_TIME = 1000; // nS
 	
 localparam DELAY_TICKS = DELAY_TIME / (1000.0 / CLK_RATE);
 localparam COUNT_WIDTH = bit_index(DELAY_TICKS);
-localparam COUNT_LOADVAL = {1'b1, {(CNT_WIDTH-1){1'b0}}, 1'b1} - DELAY_TICKS;
+localparam ROLLOVER_VAL = { 1'b1, {(CNT_WIDTH){1'b0}} };
+localparam COUNT_LOADVAL = ROLLOVER_VAL - DELAY_TICKS + 1'b1;
 
 reg [COUNT_WIDTH:0] count_reg;
 ```
@@ -167,17 +169,17 @@ end
 ## Rollover Counter
 
 ```Verilog
-// Generate a clock tick every 100 clock cycles
+// Generate a clock tick every 75 clock cycles
 reg [8:0] counter;
 wire      clock_tick;
 
 // Use counter rollover for clock tick
-assign clock_tick = counter[8];
+assign clock_tick = counter[8]; // Rollover bit
 
 always @(posedge CLK)
 begin
-	if (counter[8])
-		counter <= (9'h101 - 9'd100); // Reset the counter
+	if (clock_tick)
+		counter <= (9'h100 - 9'd75 + 1'b1); // Reset the counter
 	else
 		counter <= counter + 1'b1; // Increment the counter
 end
