@@ -52,6 +52,14 @@ There is also a bug work around that needs to be done for ModelSim:
 3. Copy the path from the **ModelSim-Altera** box to the **ModelSim** box
 4. Click **OK** to save the changes
 
+Add Quartus and ModelSim to the enviroment path by adding the following lines to the end of your `~/.bashrc` file (the install path to Quartus may be different on your machine):
+
+```
+export LM_LICENSE_FILE=""
+export PATH=${PATH}:/opt/intelFPGA_lite/16.1/quartus/bin
+export PATH=${PATH}:/opt/intelFPGA_lite/modelsim_ase/linuxaloem
+```
+
 Note: the modelsim path should have the _ase and NOT the _ae in it (want the Starter Edition)
 KUbuntu install on my laptop was set to be put in /opt, so the 
 modelsim path should be /opt/altera/15.0/modelsim_ase/linuxaloem
