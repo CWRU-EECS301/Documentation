@@ -58,6 +58,44 @@ Note: the modelsim path should have the _ase and NOT the _ae in it (want the Sta
 KUbuntu install on my laptop was set to be put in /opt, so the 
 modelsim path should be /opt/altera/15.0/modelsim_ase/linuxaloem
 
+USB Blaster II Configuration requires the following setup:
+
+1. Create the file **/etc/udev/rules.d/92-usbblaster.rules** to fix the udev permissions using nano, and adding the following lines...
+	
+	```
+	$ sudo nano /etc/udev/rules.d/92-usbblaster.rules
+	
+	# USB-Blaster
+	BUS=="usb", SYSFS{idVendor}=="09fb", SYSFS{idProduct}=="6001", MODE="0666"
+	BUS=="usb", SYSFS{idVendor}=="09fb", SYSFS{idProduct}=="6002", MODE="0666" 
+	BUS=="usb", SYSFS{idVendor}=="09fb", SYSFS{idProduct}=="6003", MODE="0666"   
+	
+	# USB-Blaster II
+	BUS=="usb", SYSFS{idVendor}=="09fb", SYSFS{idProduct}=="6010", MODE="0666"
+	BUS=="usb", SYSFS{idVendor}=="09fb", SYSFS{idProduct}=="6810", MODE="0666"
+	```
+
+2. Next, install the 32-bit udev library and create symlink for the older revision:
+
+	```
+	$ sudo apt-get update && sudo apt-get install libudev1:i386
+	$ sudo ln -sf /lib/x86_64-linux-gnu/libudev.so.1 /lib/x86_64-linux-gnu/libudev.so.0
+	```
+
+3. Reboot
+
+4. You should now be able to run jtagconfig and see the USB Blaster (make sure the USB cable to connected to the DE1-SoC board and the board is powered on):
+
+	```
+	$ sudo ~/intelFPGA_lite/16.1/quartus/bin/jtagconfig
+	1) DE-SoC [1-2]
+	  4BA00477   SOCVHPS
+	  02D120DD   5CSE(BA5|MA5)/5CSTFD5D5/..
+	```
+	
+5. If you received the `1) DE-SoC` message then the Programmer function properly.
+
+
 ## License Server
 
 Connect to the CWRU license server to register Quartus:
