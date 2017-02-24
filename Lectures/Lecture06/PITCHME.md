@@ -21,7 +21,7 @@
 | Equal     | `a == b`   |
 | Not Equal | `a != b`   |
 | And       | `a && b`   |
-| Or        | `a || b`   |
+| Or        | `a \|\| b`   |
 | Not       | `!a`    |
 
 #HSLIDE
@@ -32,7 +32,7 @@
 |:---------:|:------:|
 | NOT       | `~a`    |
 | AND       | `a & b`    |
-| OR        | `a | b`    |
+| OR        | `a \| b`    |
 | XOR       | `a ^ b`    |
 
 
@@ -65,11 +65,12 @@ Transitions when event == 1'b1
 
 ## Vector Boolean Values
 
-```Verilog
-wire [3:0] a = 4'h0000; // Boolean False
-wire [3:0] b = 4'h0001; // Boolean True
-wire [3:0] c = 4'h1010; // Boolean True
-```
+| Vector  | Boolean Value |
+|:-------:|:-------------:|
+| 4'h0000 |    False      |
+| 4'h0001 |    True       |
+| 4'h1010 |    True       |
+| 4'h1111 |    True       |
 
 
 #HSLIDE
@@ -109,10 +110,10 @@ assign c = a[3] & a[2] & a[1] & a[0];
 | Operation | Syntax |
 |:---------:|:------:|
 | AND       | `&a`    |
-| OR        | `|a`    |
+| OR        | `\|a`    |
 | XOR       | `^a`    |
 | NAND      | `~&a`   |
-| NOR       | `~|a`   |
+| NOR       | `~\|a`   |
 | NXOR      | `~^a`   |
 
 #HSLIDE
