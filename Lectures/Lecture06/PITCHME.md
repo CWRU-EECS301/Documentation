@@ -21,7 +21,7 @@
 | Equal     | `a == b`   |
 | Not Equal | `a != b`   |
 | And       | `a && b`   |
-| Or        | `a \|\| b`   |
+| Or        | `a &#124;&#124; b`   |
 | Not       | `!a`    |
 
 #HSLIDE
@@ -32,7 +32,7 @@
 |:---------:|:------:|
 | NOT       | `~a`    |
 | AND       | `a & b`    |
-| OR        | `a \| b`    |
+| OR        | `a &#124; b`    |
 | XOR       | `a ^ b`    |
 
 
@@ -110,10 +110,10 @@ assign c = a[3] & a[2] & a[1] & a[0];
 | Operation | Syntax |
 |:---------:|:------:|
 | AND       | `&a`    |
-| OR        | `\|a`    |
+| OR        | `&#124;a`    |
 | XOR       | `^a`    |
 | NAND      | `~&a`   |
-| NOR       | `~\|a`   |
+| NOR       | `~&#124;a`   |
 | NXOR      | `~^a`   |
 
 #HSLIDE
