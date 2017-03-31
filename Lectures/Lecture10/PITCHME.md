@@ -19,16 +19,16 @@ assign B2 = A[A_WIDTH-B_WIDTH +: B_WIDTH];
 
 #HSLIDE
 
-![Vector Section](vector_sections_01.png)
+![Vector Section](https://raw.githubusercontent.com/CWRU-EECS301/Documentation/master/Lectures/Lecture10/vector_sections_01.png)
 
 #HSLIDE
 
-![Vector Section](vector_sections_02.png)
+![Vector Section](https://raw.githubusercontent.com/CWRU-EECS301/Documentation/master/Lectures/Lecture10/vector_sections_02.png)
 
 #HSLIDE
 
-![Vector Section](vector_sections_03.png)
+![Vector Section](https://raw.githubusercontent.com/CWRU-EECS301/Documentation/master/Lectures/Lecture10/vector_sections_03.png)
 
 #HSLIDE
 
-![Vector Section](vector_sections_04.png)
+![Vector Section](https://raw.githubusercontent.com/CWRU-EECS301/Documentation/master/Lectures/Lecture10/vector_sections_04.png)
