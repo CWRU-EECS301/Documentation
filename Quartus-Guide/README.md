@@ -46,6 +46,10 @@ There is also a bug work around that needs to be done for ModelSim:
 3. Copy the path from the **ModelSim-Altera** box to the **ModelSim** box
 4. Click **OK** to save the changes
 
+Your entry for the path additions should look like this:
+
+![Quartus Options Path Setup Image](QuartusModelSimSetup.png)
+
 Add Quartus and ModelSim to the enviroment path by adding the following lines to the end of your `~/.bashrc` file (the install path to Quartus may be different on your machine):
 
 ```
