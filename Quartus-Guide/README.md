@@ -2,30 +2,74 @@
 
 ## Downloading the Quartus Installer
 
-The Quartus v15.1 Installer files for both Linux and Windows are available from the class Google Drive.
+The Quartus v16.1 Installer files for both Linux and Windows are available from the class Google Drive.  There are distro's of the free WEB version as well as the full Licensed version.
 
 Download the files listed for your OS:
 
-* **For Windows**: [Quartus v15.1 Windows](https://drive.google.com/drive/u/1/folders/0B3gj26Jx7aigTVdXYl9DMm5ES28)
-  * QuartusSetup-15.1.0.185-windows.exe
-  * QuartusSetup-15.1.2.193-windows.exe 
-  * ModelSimSetup-15.1.0.185-windows.exe
-  * cyclonev-15.1.0.185.qdz
+* **For Windows Web Version**: [Quartus v16.1 Windows](https://drive.google.com/drive/folders/0B3gj26Jx7aigTmdLQ1U1YW5Vejg)
+```
+QuartusLiteSetup-16.1.0.196-windows.exe
+cyclonev-16.1.0.196.qdz
+QuartusHelpSetup-16.1.0.196-windows.exe
+QuartusSetup-16.1.2.203-windows.exe
+ModelSimSetup-16.1.0.196-windows.exe
+```
+* **For Linux Web Version**: [QuartusLiteSetup_Ver_16.1.0.196 ](https://drive.google.com/drive/folders/0B3gj26Jx7aigc042LUtIYTNQbEU)
 
-* **For Linux**: [Quartus v15.0.2 Linux](https://drive.google.com/drive/u/1/folders/0B3gj26Jx7aigODZFeWRvMXVELWc)
-  * QuartusSetup-15.0.2.153-linux.run
-  * Quartus-15.0.0.145-linux.tar
-  * Quartus-15.0.0.145-devices-1.tar
+I would recommend using the Free Web version so you don't have to be logged into the Case Network every time you use Quartus and have to get a license key to run it (i.e. working off of the CWRU secure network).  When you need it, logging in on the secure Case Network WILL get you access for the license server to work (license server is only needed for later labs utilizing IP cores, etc.). So this way you can use it either way. Kinda nice when working off-campus on labs.
+
+The distro is available to you on the shared Google Drive - the full licensed version is available as well.  The free  web version:
+
+* Quartus 16.1 Web  files and associated MD5 Sums
+*
+* Quartus Prime (includes Nios II EDS)
+* Size: 2.0 GB MD5: 0FFD781FCC23C6FABC6A68019B3CAB62
+* File: QuartusLiteSetup-16.1.0.196-linux.run
+*
+* ModelSim-Intel FPGA Edition (includes Starter Edition)
+* Size: 1.1 GB MD5: F665D7016FF793E64F57B08B37487D0E
+* File: ModelSimSetup-16.1.0.196-linux.run
+*
+* Cyclone V device support
+* Size: 1.1 GB MD5: 8386E6891D17DC1FAF29067C46953FC7
+* File: cyclonev-16.1.0.196.qdz
+*
+* Software and IP Updates (Latest)
+* Quartus Prime Software v16.1 Update 2
+* *You must have the base software installed before installing the update.
+* Size: 2.4 GB MD5: 607E5CBFF6B674034413E675655DDA32
+* File: QuartusSetup-16.1.2.203-linux.run
+*
 
 ## Install Process
 
 ### For Windows: 
+```
+Run: QuartusLiteSetup-16.1.0.196-windows.exe
+Run: QuartusHelpSetup-16.1.0.196-windows.exe
+Run: ModelSimSetup-16.1.0.196-windows.exe
+Run: QuartusSetup-16.1.2.203-windows.exe
+```
 
-Run: **QuartusSetup-15.1.0.185-windows.exe**
 
 ### For Linux (Ubuntu 16.04LTS): 
 
-From a command shell run: `QuartusSetup-15.0.2.153-linux.run`
+After Downloading the 4 files to your machine, make sure they are each marked as executable, So, in a command shell:
+```
+sudo chmod +x QuartusLiteSetup-16.1.0.196-linux.run
+sudo chmod +x ModelSimSetup-16.1.0.196-linux.run
+sudo chmod +x cyclonev-16.1.0.196.qdz
+sudo chmod +x QuartusSetup-16.1.2.203-linux.run
+```
+
+Then from the same command shell run the install program: 
+
+`sudo ./QuartusLiteSetup-16.1.0.196-linux.run`
+
+Choose to install it in the /opt directory (not a good idea to install it in your /home/username directory...)
+
+If all the downloaded files are in the same directory, it will install all 4 files (including the updates) for you.
+You should now be running Quartus II Ver 16.1.2 Build 203
 
 After the Quartus install completes, there are additional packages that need to be installed for ModelSim to provide 32-bit runtime support.
 
@@ -91,14 +135,23 @@ USB Blaster II Configuration requires the following setup:
 
 4. You should now be able to run jtagconfig and see the USB Blaster (make sure the USB cable to connected to the DE1-SoC board and the board is powered on):
 
-	```
+
+`sudo /opt/intelFPGA_lite/16.1/quartus/bin/jtagconfig'`
+
+in my .bashrc file (located in /home/username directory), I added the following to make an alias to check the USB programmer is linked in correctly (vad = View Altera Devboard):
+
+`alias vad='sudo /opt/intelFPGA_lite/16.1/quartus/bin/jtagconfig'`
+
+
+So when you type vad, your results should look similiar to this:
+```
 	$ sudo ~/intelFPGA_lite/16.1/quartus/bin/jtagconfig
-	1) DE-SoC [1-2]
-	  4BA00477   SOCVHPS
-	  02D120DD   5CSE(BA5|MA5)/5CSTFD5D5/..
-	```
-	
-5. If you received the `1) DE-SoC` message then the Programmer function properly.
+or 	$ vad
+	1) DE-SoC [2-1.3]
+           4BA00477   SOCVHPS
+           02D120DD   5CSE(BA5|MA5)/5CSTFD5D5/..
+```	
+5. If you received the `1) DE-SoC` message then the DE1-SoC USB Programmer is functioning properly.
 
 
 ## License Server
@@ -109,7 +162,9 @@ Connect to the CWRU license server to register Quartus:
 
 1. In the **License File** box enter: _1800@cse-lic-03_
 
-1. The set of 4 (total) licensed cores should update.
+1. The set of 4 (total) licensed cores should update showing 20 seats for each license.
+
+It should look like this:
 
 
-
+![Quartus License Server Image](QuartusLicenseServer.png)
