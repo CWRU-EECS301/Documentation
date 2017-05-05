@@ -6,7 +6,7 @@ The Quartus v16.1 Installer files for both Linux and Windows are available from 
 
 Download the files listed for your OS:
 
-* **For Windows Web Version**: [Quartus v16.1 Windows](https://drive.google.com/drive/folders/0B3gj26Jx7aigTmdLQ1U1YW5Vejg)
+* **For Windows Web Version**: [Quartus II Ver 16.1 Windows](https://drive.google.com/drive/folders/0B3gj26Jx7aigTmdLQ1U1YW5Vejg)
 ```
 QuartusLiteSetup-16.1.0.196-windows.exe
 cyclonev-16.1.0.196.qdz
@@ -14,7 +14,7 @@ QuartusHelpSetup-16.1.0.196-windows.exe
 QuartusSetup-16.1.2.203-windows.exe
 ModelSimSetup-16.1.0.196-windows.exe
 ```
-* **For Linux Web Version**: [QuartusLiteSetup_Ver_16.1.0.196 ](https://drive.google.com/drive/folders/0B3gj26Jx7aigc042LUtIYTNQbEU)
+* **For Linux Web Version**: [Quartus II Ver 16.1 Linux ](https://drive.google.com/drive/folders/0B3gj26Jx7aigc042LUtIYTNQbEU)
 
 I would recommend using the Free Web version so you don't have to be logged into the Case Network every time you use Quartus and have to get a license key to run it (i.e. working off of the CWRU secure network).  When you need it, logging in on the secure Case Network WILL get you access for the license server to work (license server is only needed for later labs utilizing IP cores, etc.). So this way you can use it either way. Kinda nice when working off-campus on labs.
 
