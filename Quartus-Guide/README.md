@@ -19,12 +19,18 @@ ModelSimSetup-16.1.0.196-windows.exe
 I would recommend using the Free Web version so you don't have to be logged into the Case Network every time you use Quartus and have to get a license key to run it (i.e. working off of the CWRU secure network).  When you need it, logging in on the secure Case Network WILL get you access for the license server to work (license server is only needed for later labs utilizing IP cores, etc.). So this way you can use it either way. Kinda nice when working off-campus on labs.
 
 The distro is available to you on the shared Google Drive - the full licensed version is available as well.  The free  web version:
+```
+QuartusLiteSetup-16.1.0.196-linux.run
+ModelSimSetup-16.1.0.196-linux.run
+cyclonev-16.1.0.196.qdz
+QuartusSetup-16.1.2.203-linux.run
+```
 
 * Quartus 16.1 Web  files and associated MD5 Sums
 *
 * Quartus Prime (includes Nios II EDS)
 * Size: 2.0 GB MD5: 0FFD781FCC23C6FABC6A68019B3CAB62
-* File: QuartusLiteSetup-16.1.0.196-linux.run
+* `File: QuartusLiteSetup-16.1.0.196-linux.run`
 *
 * ModelSim-Intel FPGA Edition (includes Starter Edition)
 * Size: 1.1 GB MD5: F665D7016FF793E64F57B08B37487D0E
@@ -32,13 +38,13 @@ The distro is available to you on the shared Google Drive - the full licensed ve
 *
 * Cyclone V device support
 * Size: 1.1 GB MD5: 8386E6891D17DC1FAF29067C46953FC7
-* File: cyclonev-16.1.0.196.qdz
+* `File: cyclonev-16.1.0.196.qdz`
 *
 * Software and IP Updates (Latest)
 * Quartus Prime Software v16.1 Update 2
 * *You must have the base software installed before installing the update.
 * Size: 2.4 GB MD5: 607E5CBFF6B674034413E675655DDA32
-* File: QuartusSetup-16.1.2.203-linux.run
+* `File: QuartusSetup-16.1.2.203-linux.run`
 *
 
 ## Install Process
