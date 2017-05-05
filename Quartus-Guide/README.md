@@ -56,7 +56,7 @@ export PATH=${PATH}:/opt/intelFPGA_lite/modelsim_ase/linuxaloem
 
 Note: the modelsim path should have the _ase and NOT the _ae in it (want the Starter Edition)
 KUbuntu install on my laptop was set to be put in /opt, so the 
-modelsim path should be /opt/altera/15.0/modelsim_ase/linuxaloem
+modelsim path should be `/opt/intelFPGA_lite/modelsim_ase/linuxaloem`
 
 Your entry for the path additions should look like this:
 
