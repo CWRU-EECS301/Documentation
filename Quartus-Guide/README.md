@@ -151,7 +151,7 @@ in my .bashrc file (located in /home/username directory), I added the following 
 
 So when you type vad, your results should look similiar to this:
 ```
-	$ sudo ~/intelFPGA_lite/16.1/quartus/bin/jtagconfig
+	$ sudo /opt/intelFPGA_lite/16.1/quartus/bin/jtagconfig
 or 	$ vad
 	1) DE-SoC [2-1.3]
            4BA00477   SOCVHPS
